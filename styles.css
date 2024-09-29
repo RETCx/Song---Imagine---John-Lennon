@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b7b7b7;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center the links */
+    margin: 20px 0; /* Adjust margin */
+}
+nav a {
+    margin: 10px; /* Add margin to create space between links */
+    flex: 1 1 15px; /* Allow flexibility in link sizes */
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    justify-content: center;
+    border: 2px solid #000000;
+    align-items: center;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Content Container */
+.container {
+    background-color: #f0f0f0;
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 50px;
+}
+h2 {
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+    color: #333333;
+    text-align: justify;
+}
+
+/* Lyrics Styling */
+.lyrics em span {
+    display: block;
+    font-size: 1.3em;
+    color: #000000;
+    margin: 8px 0;
+    text-align: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.lyrics {
+    justify-content: center;
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.lyrics em span:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 1.33em;
+}
+
+.lyrics-container {
+    margin-top: 10px;
+    max-height: 300px;  /* Adjust height as necessary */
+    overflow-y: auto;
+    padding-right: 10px;  /* Optional: Prevent horizontal scroll */
+    margin-bottom: 20px;  /* To space out from the Spotify container */
+    border: 1px solid #ddd;  /* Optional: To add a border around the lyrics */
+    padding: 10px;
+    background-color: #f9f9f9;  /* Optional: A background for styling */
+}
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+}
+footer p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+audio {
+    width: 100%; /* Full width of the section */
+    max-width: 600px; /* Max width for audio player */
+    border-radius: 10px; /* Rounded corners */
+    outline: none; /* Remove outline */
+    justify-content: center;
+
+}
+li{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #333333;
+    text-align: justify; 
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+    nav a {
+        font-size: 0.9em; /* Smaller font size for nav links */
+        padding: 8px 10px; /* Smaller padding */
+        width: auto; /* Ensure width is adjusted automatically */
+    }
+    h2 {
+        font-size: 2em;
+    }
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 10px; /* Reduce padding on smaller screens */
+    }
+    header p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+    .container {
+        padding: 20px; /* Reduce padding in the container */
+        margin: 10px; /* Add margin to avoid edge-to-edge on small screens */
+    }
+    section {
+        margin-bottom: 30px; /* Reduce margin between sections */
+    }
+    p {
+        font-size: 1em; /* Adjust paragraph font size */
+    }
+    .lyrics em span {
+        font-size: 1.1em; /* Reduce font size for lyrics */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5em; /* Further reduce header size */
+    }
+    header p {
+        font-size: 0.9em; /* Adjust paragraph size */
+    }
+    nav {
+        margin: 20px 0; /* Reduce navigation margin */
+    }
+    nav a {
+        font-size: 0.9em; /* Smaller font size for nav links */
+        padding: 8px 10px; /* Smaller padding */
+        width: auto; /* Ensure width is adjusted automatically */
+    }
+    h2 {
+        font-size: 1.8em; /* Adjust section heading size */
+    }
+    p {
+        font-size: 0.9em; /* Smaller paragraph font size */
+        line-height: 1.5em; /* Adjust line height */
+    }
+    footer p {
+        font-size: 1em; /* Adjust footer font size */
+    }
+}
+
+
+
+
+
