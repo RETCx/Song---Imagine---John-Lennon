@@ -86,6 +86,13 @@ p {
     text-align: justify;
 }
 
+ul {
+    display: flex; /* Use flexbox for list items */
+    flex-direction: column; /* Stack list items vertically */
+    margin: 10px; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
 /* Lyrics Styling */
 .lyrics em span {
     display: block;
@@ -190,32 +197,7 @@ li{
     }
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2.5em; /* Further reduce header size */
-    }
-    header p {
-        font-size: 0.9em; /* Adjust paragraph size */
-    }
-    nav {
-        margin: 20px 0; /* Reduce navigation margin */
-    }
-    nav a {
-        font-size: 0.9em; /* Smaller font size for nav links */
-        padding: 8px 10px; /* Smaller padding */
-        width: auto; /* Ensure width is adjusted automatically */
-    }
-    h2 {
-        font-size: 1.8em; /* Adjust section heading size */
-    }
-    p {
-        font-size: 0.9em; /* Smaller paragraph font size */
-        line-height: 1.5em; /* Adjust line height */
-    }
-    footer p {
-        font-size: 1em; /* Adjust footer font size */
-    }
-}
+
 
 
 
